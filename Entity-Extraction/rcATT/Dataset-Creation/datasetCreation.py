@@ -108,7 +108,7 @@ with open('./Entity-Extraction/rcATT/Dataset.csv', 'w', encoding="utf8") as data
                             writer.writerow(url_row)
 
     print('[🖋️ ADDING rcATT DATASET]')
-    with open('./Entity-Extraction/rcATT/Dataset-Creation/oldDataset.csv', 'r', encoding="utf8") as rcATT:
+    with open('./Entity-Extraction/rcATT/Dataset.csv', 'r', encoding="utf8") as rcATT:
         reader = csv.reader(rcATT)
         rcATT_header = []
         rcATT_header = next(reader)

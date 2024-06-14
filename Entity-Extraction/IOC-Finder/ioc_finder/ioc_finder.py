@@ -6,9 +6,9 @@ from typing import Dict, List
 import click
 import ioc_fanger
 from d8s_strings import string_remove_from_end
-from pyparsing import ParseResults, Located
+from pyparsing import ParseResults
 
-from ioc_finder import ioc_grammars
+import ioc_grammars
 
 
 def _deduplicate(indicator_list: List) -> List:
